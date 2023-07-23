@@ -1,0 +1,230 @@
+﻿@using LTW_NTTinh_2024802010018.Models;
+@using PagedList.Mvc;
+@model PagedList.PagedList<GoodsReceivedNote_Detail>
+
+@{
+    ViewBag.Title = "Chi tiết phiếu nhập";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1 style="text-align:center" class="h3 mb-0 text-gray-800">CHI TIẾT PHIẾU NHẬP</h1>
+
+
+@if (ViewBag.state == 1)
+{
+    <a data-toggle="modal" data-target="#addModal" class="btn btn-success" role="button" style="font-size:large;margin-left:15px;"><ion-icon name="add-outline" style="font-size:large;color:white"></ion-icon>Thêm sản phẩm</a>
+    <a class="btn btn-primary" href="@Url.Action("GRN_manage", "Received")" role="button" style="font-size:large">Quay lại</a>
+    <a href="@Url.Action("Save", new {id = ViewBag.id1})" class="btn btn-outline-info" role="button" style="font-size:large;">Xác nhận</a>
+    <table id="myTable" class="table table-striped table-bordered" style="width:100%; font-size:large;margin-bottom:5px;">
+        <thead>
+            <tr>
+                <th style="text-align: center; width: 120px">
+                    Mã phiếu nhập
+                </th>
+                <th style="text-align: center; width: 120px">
+                    Mã sản phẩm
+                </th>
+                <th style="text-align: center; width: 120px">
+                    Tên sản phẩm
+                </th>
+                <th style="text-align: center; width: 180px">
+                    Số lượng
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Đơn giá
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Thành tiền
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Thao tác
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GRNID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductID)
+                    </td>
+                    @foreach (var i in ViewBag.products)
+                    {
+                        if (item.ProductID == i.ProductID)
+                        {
+                            <td>
+                                <p>@i.ProductName</p>
+                            </td>
+                        }
+                    }
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.FormatValue(item.UnitPrice_inp, "{0:#,##0}") VNĐ
+                    </td>
+                    <td>
+                        @Html.FormatValue(item.Amount, "{0:#,##0}") VNĐ
+                    </td>
+
+                    <td>
+                        <a data-toggle="modal" data-target="#edit-@item.ItemID" class="btn btn-primary" role="button" style="font-size:large">Sửa</a>
+                        @Html.Action("Edit", new { id = ViewBag.id1, id3 = item.ItemID })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p style="font-style:italic; font-size:11px">*Lưu ý: Sau 3 ngày sẽ không thể huỷ phiếu</p>
+}
+else if (ViewBag.state == 0 && ViewBag.chkdate <= 3)
+{
+    <a data-toggle="modal" data-target="#del-@ViewBag.id1" class="btn btn-outline-danger" role="button" style="font-size:large">Huỷ phiếu</a>
+    <a class="btn btn-primary" href="@Url.Action("GRN_manage", "Received")" role="button" style="font-size:large">Quay lại</a>
+    @Html.Action("Cancel", new { id = ViewBag.id1 })
+    <table id="myTable" class="table table-striped table-bordered" style="width:100%; font-size:large;margin-bottom:5px;">
+        <thead>
+            <tr>
+                <th style="text-align: center; width: 120px">
+                    Mã phiếu nhập
+                </th>
+                <th style="text-align: center; width: 120px">
+                    Mã sản phẩm
+                </th>
+                <th style="text-align: center; width: 120px">
+                    Tên sản phẩm
+                </th>
+                <th style="text-align: center; width: 180px">
+                    Số lượng
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Đơn giá
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Thành tiền
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Thao tác
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GRNID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductID)
+                    </td>
+                    @foreach (var i in ViewBag.products)
+                    {
+                        if (item.ProductID == i.ProductID)
+                        {
+                            <td>
+                                <p>@i.ProductName</p>
+                            </td>
+                        }
+                    }
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.FormatValue(item.UnitPrice_inp, "{0:#,##0}") VNĐ
+                    </td>
+                    <td>
+                        @Html.FormatValue(item.Amount, "{0:#,##0}") VNĐ
+                    </td>
+
+                    <td>
+                        <p style="text-align:center">NOT AVAILABLE</p>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p style="font-style:italic; font-size:11px">*Lưu ý: Sau 3 ngày sẽ không thể huỷ phiếu</p>
+}
+else
+{
+    <a class="btn btn-primary" href="@Url.Action("GRN_manage", "Received")" role="button" style="font-size:large;margin-left:10px">Quay lại</a>
+    <table id="myTable" class="table table-striped table-bordered" style="width:100%; font-size:large;margin-bottom:5px;">
+        <thead>
+            <tr>
+                <th style="text-align: center; width: 120px">
+                    Mã phiếu nhập
+                </th>
+                <th style="text-align: center; width: 120px">
+                    Mã sản phẩm
+                </th>
+                <th style="text-align: center; width: 120px">
+                    Tên sản phẩm
+                </th>
+                <th style="text-align: center; width: 180px">
+                    Số lượng
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Đơn giá
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Thành tiền
+                </th>
+                <th style="text-align: center; width: 130px">
+                    Thao tác
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.GRNID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductID)
+                    </td>
+                    @foreach (var i in ViewBag.products)
+                    {
+                        if (item.ProductID == i.ProductID)
+                        {
+                            <td>
+                                <p>@i.ProductName</p>
+                            </td>
+                        }
+                    }
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.FormatValue(item.UnitPrice_inp, "{0:#,##0}") VNĐ
+                    </td>
+                    <td>
+                        @Html.FormatValue(item.Amount, "{0:#,##0}") VNĐ
+                    </td>
+
+                    <td>
+                        <p style="text-align:center">NOT AVAILABLE</p>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p style="font-style:italic; font-size:11px">*Lưu ý: Sau 3 ngày sẽ không thể huỷ phiếu</p>
+}
+<div><span>Trang @(Model.PageCount<Model.PageNumber?0:Model.PageNumber)/@Model.PageCount</span></div>
+<div class="MenuTrang">
+    @Html.PagedListPager(Model, page => Url.Action("GRN_detail", new
+{
+    page = page
+}))
+
+</div>
+@Html.Action("Create", new
+{
+    id1 = ViewBag.id1
+})

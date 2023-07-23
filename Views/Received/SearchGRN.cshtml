@@ -1,0 +1,113 @@
+﻿@model IEnumerable<LTW_NTTinh_2024802010018.Models.GoodsReceivedNote>
+@{
+    ViewBag.Title = "Quản lý phiếu nhập";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h1 style="text-align:center" class="h3 mb-0 text-gray-800">DANH SÁCH HÓA ĐƠN</h1>
+@if (ViewBag.check == 1)
+{
+    using (Html.BeginForm("SearchGRN", "GoodsReceivedNote", FormMethod.Get, new { @role = "search", style = "margin-left:20px" }))
+    {
+        <div class="input-group" style=" width:412px;margin: 10px; font-size: large;">
+            <input name="strSearch" style="padding: 20px; font-size: large;width:200px" class="form-control" type="text" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..." aria-describedby="btnNavbarSearch" />
+            <button style=" margin-right: 5px;" class="btn btn-primary" id="btnNavbarSearch" type="submit"><i class="fas fa-search"></i></button>
+            <a data-toggle="modal" data-target="#addModal" class="btn btn-success" role="button" style="font-size:large;margin-left:5px;"><ion-icon name="add-outline" style="font-size:large;color:white"></ion-icon> Thêm mới</a>
+            <a href="@Url.Action("GRN_manage")" class="btn btn-primary">Quay lại</a>
+        </div>
+        <div><h3>Kết quả tìm: @ViewBag.Count</h3></div>
+    }
+<table id="myTable" class="table table-striped table-bordered" style="width:100%; font-size:large;margin-bottom:5px;">
+    <thead>
+        <tr>
+            <th style="text-align: center; width: 120px">
+                Mã phiếu nhập
+            </th>
+            <th style="text-align: center; width: 120px">
+                Tên phiếu nhập
+            </th>
+            <th style="text-align: center; width: 180px">
+                Tổng tiền
+            </th>
+            <th style="text-align: center; width: 130px">
+                Trạng thái
+            </th>
+            <th style="text-align: center; width: 130px">
+                Thao tác
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.GRNID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GRNName)
+                </td>
+                <td>
+                    @Html.FormatValue(item.Amount, "{0:#,##0}") VNĐ
+                </td>
+                @if (item.Status == true)
+                {
+                    <td>
+                        <label class="btn btn-success">Thành công</label>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <label class="btn btn-danger">Đã hủy</label>
+                    </td>
+                }
+                @if (item.Status == true)
+                {
+                    <td>
+                        <a class="btn btn-primary" href="@Url.Action("GRN_detail", "ReceivedDetail", new {id = item.GRNID , state = true})" role="button" style="font-size:large">Chi tiết</a>
+                        <a data-toggle="modal" data-target="#del-@item.GRNID" class="btn btn-primary" role="button" style="font-size:large">Huỷ phiếu</a>
+                    </td>
+                    @Html.Action("Delete", "Received", new { id = item.GRNID })
+                }
+                else
+                {
+                    <td>
+                        <a class="btn btn-primary" href="@Url.Action("GRN_detail", "ReceivedDetail", new { id = @item.GRNID ,state = false})" role="button" style="font-size:large">Chi tiết</a>
+                    </td>
+                }
+
+            </tr>
+        }
+    </tbody>
+</table>
+}
+else
+{
+<table id="myTable" class="table table-striped table-bordered" style="width:100%; font-size:large;margin-bottom:5px;">
+    <thead>
+        <tr>
+            <th style="text-align: center; width: 120px">
+                Mã phiếu nhập
+            </th>
+            <th style="text-align: center; width: 120px">
+                Tên phiếu nhập
+            </th>
+            <th style="text-align: center; width: 180px">
+                Tổng tiền
+            </th>
+            <th style="text-align: center; width: 130px">
+                Trạng thái
+            </th>
+            <th style="text-align: center; width: 130px">
+                Thao tác
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td style="text-align:center" colspan="9">Không tồn tại đơn hàng nào</td></tr>
+    </tbody>
+</table>
+}
+
+
