@@ -53,19 +53,19 @@
             <div class="row">
                 @foreach (var item in Model)
                 {
-                    <div class="col-lg-4 col-md-12 mb-4">
+                    <div style="" class="col-lg-4 col-md-12 mb-4">
                         <div class="card">
                             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                <img src="~/Images/@item.Thumbnail" class="img-fluid" />
+                                <img style="height: 200px; width:200px" src="~/Images/@item.Thumbnail" class="img-fluid" />
                                 <a href="#!">
                                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                 </a>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">@item.NewsTitle</h5>
+                                <h5 style="height:35px" class="card-title">@item.NewsTitle</h5>
                                 <h7 style="color:darkblue">posted by @item.NewsAuthor</h7>
-                                <p class="card-text">
-                                    @Truncate(item.NewsContent, 200)
+                                <p style="height:100px" class="card-text">
+                                    @Truncate(item.NewsContent, 100)
                                 </p>
                                 <a href="@Url.Action("read_news", "Mart", new {id = item.NewsID})" class="btn btn-primary">Đọc</a>
                             </div>
