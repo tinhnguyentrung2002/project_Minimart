@@ -3,12 +3,14 @@
 
         <h2 style="text-align:center">Sản phẩm liên quan</h2>
 
-    <div class="container-fluid py-5" loop="false">
-        <div class="row px-xl-5" loop="false">
+    <div class="container-fluid py-5">
+        <div class="row px-xl-5">
             <div class="col">
-                <div class="owl-carousel vendor-carousel" loop="false">
+                <div class="owl-carousel vendor-carousel">
                     @foreach (var item in Model)
                     {
+                        if (item.Sale == 0)
+                        {
                             <div class="vendor-item border p-4">
                                 <div class="card product-item border-0 mb-4">
                                     <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
@@ -20,11 +22,34 @@
                                             <h6>@Html.FormatValue(@item.Price, "{0:#,##0}") VNĐ</h6>
                                         </div>
                                     </div>
-                                    <div style="margin:0 auto" class="card-footer d-flex justify-content-between bg-light border">
+                                    <div class="card-footer d-flex justify-content-between bg-light border">
                                         <a href="@Url.Action("product_detail","Mart", new {id = item.ProductID, id2 = item.CategoryID})" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Chi tiết</a>
+                                        <a href="@Url.Action("add_shopping_cart", "ShoppingCart", new { pId = item.ProductID, url = Request.Url.ToString()})" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Giỏ hàng</a>
                                     </div>
                                 </div>
                             </div>
+                        }
+                        else if (item.Sale != 0)
+                        {
+                            <div class="vendor-item border p-4">
+                                <div class="card product-item border-0 mb-4">
+                                    <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                        <label style="font-weight:bold;z-index:1;right:0;top:0;position:absolute;color:white;border:solid 1px;border-style:none;background-color:red">- @item.Sale%</label>
+                                        <img style="height: 190px;" class="img-fluid w-100" src="~/Images/@item.Picture" alt="">
+                                    </div>
+                                    <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                        <h6 style="font-weight:bold" class="text-truncate mb-3">@item.ProductName</h6>
+                                        <div class="d-flex justify-content-center">
+                                            <h6>@Html.FormatValue(@item.Price, "{0:#,##0}") VNĐ</h6><h6 class="text-muted ml-2"><del>@Html.FormatValue(((item.Price / (100 - item.Sale)) * 100), "{0:#,##0}") VNĐ</del></h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between bg-light border">
+                                        <a href="@Url.Action("product_detail","Mart", new {id = item.ProductID, id2 = item.CategoryID})" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>Chi tiết</a>
+                                        <a href="@Url.Action("add_shopping_cart", "ShoppingCart", new { pId = item.ProductID, url = Request.Url.ToString()})" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
                     }
                 </div>
             </div>
