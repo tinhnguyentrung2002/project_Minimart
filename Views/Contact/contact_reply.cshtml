@@ -30,7 +30,7 @@
                         <hr />
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         <div class="form-group">
-                            <label class="control-label col-md-2">Tên khách</label>
+                            <label class="control-label col-md-2">Mã phản hồi</label>
                             <div class="col-md-10">
                                 <input readonly type="text" name="Id" value="@Model.ResponseID" />
                                 @Html.ValidationMessageFor(model => model.ResponseGuestName, "", new { @class = "text-danger" })
