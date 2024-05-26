@@ -133,7 +133,7 @@
     | UnitPrice    | decimal(18,0)   | No   |               | Đơn giá             |
     | Amount       | decimal(18,0)   | No   |               | Thành tiền          |
 
-Bảng 10: Bảng chi tiết hóa đơn
+    Bảng 10: Bảng chi tiết hóa đơn
 
 11. **Bảng phương thức thanh toán**
 
@@ -142,7 +142,7 @@ Bảng 10: Bảng chi tiết hóa đơn
     | PaymentID    | nvarchar(10)    | No   | PK            | ID phương thức thanh toán |
     | PaymentType  | nvarchar(10)    | No   |               | Loại phương thức thanh toán |
 
-Bảng 11: Bảng phương thức thanh toán
+    Bảng 11: Bảng phương thức thanh toán
 
 12. **Bảng sản phẩm**
 
@@ -161,7 +161,7 @@ Bảng 11: Bảng phương thức thanh toán
     | Sale         | int             | Yes  |               | Giảm giá            |
     | Updated      | datetime        | No   |               | Ngày cập nhật       |
 
-Bảng 12: Bảng sản phẩm
+    Bảng 12: Bảng sản phẩm
 
 13. **Bảng nhà cung cấp**
 
@@ -173,7 +173,7 @@ Bảng 12: Bảng sản phẩm
     | Description  | nvarchar(200)   | Yes  |               | Mô tả               |
     | Logo         | nvarchar(40)    | No   |               | Logo nhà cung cấp   |
 
-Bảng 13: Bảng nhà cung cấp
+    Bảng 13: Bảng nhà cung cấp
 
 14. **Bảng liên hệ**
 
@@ -186,7 +186,7 @@ Bảng 13: Bảng nhà cung cấp
     | ResponseStatus     | bit             | No   |               | Trạng thái          |
     | Updated            | datetime        | No   |               | Ngày cập nhật       |
 
-Bảng 14: Bảng liên hệ
+    Bảng 14: Bảng liên hệ
 
 15. **Bảng người dùng**
 
@@ -199,7 +199,7 @@ Bảng 14: Bảng liên hệ
     | EmployeeID   | nvarchar(12)    | Yes  | FK(Employee)  | ID nhân viên        |
     | CustomerID   | nvarchar(12)    | Yes  | FK(Customer)  | ID khách hàng       |
 
-Bảng 15: Bảng người dùng
+    Bảng 15: Bảng người dùng
 
 # Demo sản phẩm
 
