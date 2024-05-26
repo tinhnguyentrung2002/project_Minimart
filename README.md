@@ -2,8 +2,6 @@
 
 1. **Bảng danh mục**
 
-   Table: Category
-
    | Field Name   | Data Type       | Null | Key           | Description          |
    |--------------|-----------------|------|---------------|----------------------|
    | STT          | int             | No   |               | Số thứ tự danh mục  |
@@ -15,7 +13,6 @@
    Bảng 1: Bảng danh mục
 
 2. **Bảng khuyến mãi**
-   Table: Coupon
 
    | Field Name         | Data Type       | Null | Key           | Description             |
    |--------------------|-----------------|------|---------------|-------------------------|
@@ -27,7 +24,6 @@
    Bảng 2: Bảng khuyến mãi
 
 3. **Bảng sử dụng khuyến mãi**
-   Table: Coupon Check
 
    | Field Name   | Data Type    | Null | Key          | Description             |
    |--------------|--------------|------|--------------|-------------------------|
@@ -37,7 +33,6 @@
    Bảng 3: Bảng sử dụng khuyến mãi
 
 4. **Bảng khách hàng**
-   Table: Customer
 
    | Field Name   | Data Type       | Null | Key           | Description         |
    |--------------|-----------------|------|---------------|---------------------|
@@ -54,7 +49,6 @@
    Bảng 4: Bảng khách hàng
 
 5. **Bảng nhân viên**
-   Table: Employee
 
    | Field Name   | Data Type       | Null | Key           | Description         |
    |--------------|-----------------|------|---------------|---------------------|
@@ -71,7 +65,6 @@
 
    Bảng 5: Bảng nhân viên
 6. **Bảng phiếu nhập**
-   Table: GoodsReceivedNote
 
    | Field Name   | Data Type       | Null | Key           | Description         |
    |--------------|-----------------|------|---------------|---------------------|
@@ -85,7 +78,6 @@
    Bảng 6: Bảng phiếu nhập
 
 7. **Bảng chi tiết phiếu nhập**
-   Table: GoodsReceivedNote_Detail
 
    | Field Name   | Data Type       | Null | Key           | Description         |
    |--------------|-----------------|------|---------------|---------------------|
@@ -100,7 +92,6 @@
    Bảng 7: Bảng chi tiết phiếu nhập
 
 8. **Bảng tin tức**
-   Table: News
 
    | Field Name   | Data Type       | Null | Key           | Description         |
    |--------------|-----------------|------|---------------|---------------------|
@@ -114,7 +105,6 @@
    Bảng 8: Bảng tin tức
 
 9. **Bảng hóa đơn**
-   Table: Order
 
    | Field Name    | Data Type       | Null | Key           | Description         |
    |---------------|-----------------|------|---------------|---------------------|
@@ -133,7 +123,6 @@
    Bảng 9: Bảng hóa đơn
 
 10. **Bảng chi tiết hóa đơn**
-    Table: OrderDetail
 
     | Field Name   | Data Type       | Null | Key           | Description         |
     |--------------|-----------------|------|---------------|---------------------|
@@ -147,7 +136,6 @@
 Bảng 10: Bảng chi tiết hóa đơn
 
 11. **Bảng phương thức thanh toán**
-    Table: Payment
 
     | Field Name   | Data Type       | Null | Key           | Description         |
     |--------------|-----------------|------|---------------|---------------------|
@@ -157,7 +145,6 @@ Bảng 10: Bảng chi tiết hóa đơn
 Bảng 11: Bảng phương thức thanh toán
 
 12. **Bảng sản phẩm**
-    Table: Product
 
     | Field Name   | Data Type       | Null | Key           | Description         |
     |--------------|-----------------|------|---------------|---------------------|
@@ -177,7 +164,6 @@ Bảng 11: Bảng phương thức thanh toán
 Bảng 12: Bảng sản phẩm
 
 13. **Bảng nhà cung cấp**
-    Table: Provider
 
     | Field Name   | Data Type       | Null | Key           | Description         |
     |--------------|-----------------|------|---------------|---------------------|
@@ -190,7 +176,6 @@ Bảng 12: Bảng sản phẩm
 Bảng 13: Bảng nhà cung cấp
 
 14. **Bảng liên hệ**
-    Table: Contact
 
     | Field Name         | Data Type       | Null | Key           | Description         |
     |--------------------|-----------------|------|---------------|---------------------|
@@ -204,7 +189,6 @@ Bảng 13: Bảng nhà cung cấp
 Bảng 14: Bảng liên hệ
 
 15. **Bảng người dùng**
-    Table: User
 
     | Field Name   | Data Type       | Null | Key           | Description         |
     |--------------|-----------------|------|---------------|---------------------|
