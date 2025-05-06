@@ -1,3 +1,181 @@
+# Demo sản phẩm
+
+## 1. Giao diện người dùng
+
+### 1.1. Giao diện trang chủ trước đăng nhập
+
+![Giao diện trang chủ trước đăng nhập](images/1.png)
+
+Gồm có: Trang chủ, Sản phẩm, Tin tức, Chính sách, Liên hệ, Đăng nhập, Đăng ký. Người dùng click chọn vào các biểu tượng để chọn mục muốn thực hiện.
+
+### 1.2. Giao diện trang chủ sau đăng nhập
+
+![Giao diện trang chủ sau đăng nhập](images/2.png)
+
+Gồm có: Trang chủ, Sản phẩm, Tin tức, Chính sách, Liên hệ, Tên người dùng, Đơn hàng, Đăng xuất. Người dùng click chọn vào các biểu tượng để chọn mục muốn thực hiện.
+
+### 1.3. Giao diện trang đăng nhập
+
+![Giao diện trang đăng nhập](images/3.png)
+
+Đăng nhập là một lối vào ứng dụng, trang web hoặc dịch vụ. Nó giúp người dùng thiết lập danh tính của họ. Nếu thông tin tên tài khoản và mật khẩu đều đúng thì nó sẽ mở trang chủ hoặc trang quản trị còn nếu mọi người nhập sai thì hệ thống sẽ báo lỗi nhập sai.
+
+### 1.4. Giao diện trang đăng ký
+
+![Giao diện trang đăng ký](images/4.png)
+
+Giao diện đăng ký đầy đủ thông tin cá nhân như số điện thoại, email, tên đăng nhập, ngày sinh, … để việc đăng nhập hay tra cứu thông tin một cách dễ dàng và phân biệt giữa nhiều tài khoản khác nhau. Sau khi đăng ký tài khoản xong, bạn có thể đăng nhập tài khoản của bạn đã tạo qua website của chúng tôi đề trải nghiệm website.
+
+### 1.5. Giao diện trang sản phẩm
+
+![Giao diện trang sản phẩm](images/5.png)
+
+Người dùng đề có thể xem thông tin sản phẩm của website kể cả khi đăng nhập hoặc chưa đăng nhập. Ngoài ra người dùng có thể sử dụng các bộ lọc: nhà cung cấp, danh mục, tìm kiếm,... để tìm được sản phẩm mong muốn.
+
+### 1.6. Giao diện trang tin tức
+
+![Giao diện trang tin tức](images/6.png)
+
+Người dùng có thể đọc các tin tức kể cả lúc đăng nhập và chưa đăng nhập, để có thêm thông tin bên cạnh việc mua hàng trên website.
+
+### 1.7. Giao diện trang chính sách thanh toán
+
+![Giao diện trang chính sách thanh toán](images/7.png)
+
+Người dùng có thể đọc qua chính sách thanh toán để biết thêm về cách thức cũng như quy trình thanh toán của siêu thị.
+
+### 1.8. Giao diện trang chính sách bảo hành
+
+![Giao diện trang chính sách bảo hành](images/8.png)
+
+Người dùng có thể đọc qua chính sách bảo hành để biết thêm về cách thức cũng như quy trình bảo hành của siêu thị.
+
+### 1.9. Giao diện trang chính sách vận chuyển
+
+![Giao diện trang chính sách vận chuyển](images/9.png)
+
+Người dùng có thể đọc qua chính sách vận chuyển để biết thêm về cách thức cũng như quy trình vận chuyển của siêu thị.
+
+### 1.10. Giao diện trang thông tin cá nhân
+
+![Giao diện trang thông tin cá nhân](images/10.png)
+
+Người dùng có thể xem thông tin cá nhân khi click vào tên tài khoản của mình. Ngoài ra người dùng cũng có thể chỉnh sửa thông tin của mình.
+
+### 1.11. Giao diện trang đơn hàng đã mua
+
+![Giao diện trang đơn hàng đã mua](images/11.png)
+
+Người dùng có thể quản lý các đơn hàng đã đặt hàng trên website. Ngoài ra người dùng có thể sử dụng các bộ lọc: theo ngày, tìm kiếm,.. để tìm được các đơn hàng mong muốn.
+
+### 1.12. Giao diện trang giỏ hàng
+
+![Giao diện trang giỏ hàng](images/12.png)
+
+Người dùng có thể lựa chọn sản phẩm vào giỏ hàng, tại đây sẽ cung cấp thông tin về thành tiền, thông tin sản phẩm, ngoài ra có thể chỉnh sửa số lượng, sử dụng mã khuyến mãi.
+
+### 1.13. Giao diện trang đơn đặt hàng
+
+![Giao diện trang đơn đặt hàng](images/13.png)
+
+Trang đơn đặt hàng cho phép người dùng nhập thông tin liên quan phục vụ cho việc giao hàng. Sau khi nhập thông tin, người dùng chọn tiếp phương thức thanh toán phù hợp và xác nhận đơn hàng.
+
+### 1.14. Giao diện trang tổng quan
+
+![Giao diện trang tổng quan](images/14.png)
+
+Tại trang tổng quan sẽ cung cấp các thông tin như: doanh thu theo tháng hoặc năm, số lượng đơn hàng, cũng như danh sách nhân viên,.. để quản trị viên dễ dàng nắm bắt tình hình hoạt động của siêu thị.
+
+### 1.15. Giao diện trang quản lý nhân viên
+
+![Giao diện trang quản lý nhân viên](images/15.png)
+
+Quản trị viên có thể xem tất cả thông tin nhân viên hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý nhân viên của siêu thị.
+
+### 1.16. Giao diện trang quản lý khách hàng
+
+![Giao diện trang quản lý khách hàng](images/16.png)
+
+Quản trị viên có thể xem tất cả thông tin khách hàng hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý khách hàng của siêu thị.
+
+### 1.17. Giao diện trang quản lý quyền người dùng
+
+![Giao diện trang quản lý quyền người dùng](images/17.png)
+
+Quản trị viên có thể xem quyền, mã nhân viên và mã khách hàng của tất cả tài khoản đã tạo trên hệ thống của siêu thị.
+
+### 1.18. Giao diện trang quản lý sản phẩm
+
+![Giao diện trang quản lý sản phẩm](images/18.png)
+
+Quản trị viên có thể xem tất cả thông tin sản phẩm hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý sản phẩm của siêu thị trên hệ thống.
+
+### 1.19. Giao diện trang quản lý nhà cung cấp
+
+![Giao diện trang quản lý nhà cung cấp](images/19.png)
+
+Quản trị viên có thể xem tất cả thông tin nhà cung cấp, đối tác hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý thông tin các đối tác của siêu thị.
+
+### 1.20. Giao diện trang quản lý đơn nhập hàng
+
+![Giao diện trang quản lý đơn nhập hàng](images/20.png)
+
+Quản trị viên có thể xem tất cả thông tin các đơn nhập hàng sản phẩm và sử dụng các thao tác: thêm, hủy đơn,.. để dễ dàng quản lý số lượng sản phẩm đầu vào của siêu thị.
+
+### 1.21. Giao diện trang quản lý tin tức
+
+![Giao diện trang quản lý tin tức](images/21.png)
+
+Quản trị viên có thể xem tất cả thông tin các bài viết tin tức hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý bài viết của siêu thị trên hệ thống.
+
+### 1.22. Giao diện trang quản lý hóa đơn
+
+![Giao diện trang quản lý hóa đơn](images/22.png)
+
+Quản trị viên có thể xem tất cả thông tin hóa đơn mà khách đã đặt và sử dụng các thao tác: xem chi tiết, chỉnh sửa trạng thái và hủy đơn,…để dễ dàng quản lý hóa đơn của hệ thống siêu thị.
+
+### 1.23. Giao diện trang quản lý danh mục
+
+![Giao diện trang quản lý danh mục](images/23.png)
+
+Quản trị viên có thể xem tất cả thông tin danh mục sản phẩm và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý danh mục trên hệ thống siêu thị.
+
+### 1.24. Giao diện trang quản lý mã khuyến mãi
+
+![Giao diện trang quản lý mã khuyến mãi](images/24.png)
+
+Quản trị viên có thể xem tất cả thông tin các mã khuyến mãi hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý các mã khuyến mãi của siêu thị.
+
+### 1.25. Giao diện trang quản lý liên hệ
+
+![Giao diện trang quản lý liên hệ](images/25.png)
+
+Quản trị viên có thể xem tất cả thông tin câu hỏi, thắc mắc của khách đã gửi về và sử dụng các thao tác: trả lời, xóa để dễ dàng hồi đáp thắc mắc qua email cũng như quản lý liên hệ của hệ thống siêu thị.
+
+### 1.26. Giao diện trang báo cáo – thống kê
+#### 1.26.1. Giao diện trang báo cáo nhân viên
+![Giao diện trang báo cáo nhân viên](images/26.png)
+
+Quản trị viên có thể xuất các thống kê lại nhân viên phục vụ cho việc báo cáo dưới dạng file PDF, ảnh.
+#### 1.26.2. Giao diện trang báo cáo doanh thu bán hàng
+![Giao diện trang báo cáo doanh thu bán hàng](images/27.png)
+
+Quản trị viên có thể xuất các thống kê doanh thu của siêu thị dưới dạng file PDF, ảnh.
+
+### 1.27. Quản lý trang quản lý phiếu nhập
+
+![Giao diện trang phiếu nhập](images/28.png)
+
+Về trang phiếu nhập của MiniMart được thiết kế để hỗ trợ quản lý quá trình nhập hàng từ nhà cung cấp vào kho hàng của siêu thị. Và chức năng nhập thông tên nhà cung cấp, cập nhật giá tiền theo sản phẩm đã đặt, cập nhật theo trạng thái, các thao tác chỉnh sửa phiếu nhập.
+
+### 1.28. Giao diện trang chi tiết phiếu nhập
+
+![Giao diện trang chi tiết phiếu nhập](images/29.png)
+
+Về trang chi tiết phiếu nhập của MiniMart được thiết kế để hỗ trợ quản lý sản phẩm được nhập hàng từ quá trình nhà cung cấp vào kho hàng của siêu thị. Và được quản lý các chức năng bao gồm:
+
+- Nhập sản phẩm theo đơn phiếu nhập hàng: Hệ thống nên cung cấp giao diện cho người quản lý nhập sản phẩm đã đặt từ nhà cung cấp. Quản trị viên có số lượng, giá cả, và các thông tin khác liên quan.
+- Xác nhận và xử lý phiếu nhập hàng: Người quản lý có thể xem danh sách các phiếu nhập hàng chưa được xác nhận và xử lý. Họ có thể xem thông tin chi tiết về mỗi phiếu và chọn xác nhận để đánh dấu rằng hàng đã được nhận và cập nhật vào kho hàng.
 # Mô tả cơ sở dữ liệu (SQL Server)
 
 1. **Bảng danh mục**
@@ -200,184 +378,4 @@
     | CustomerID   | nvarchar(12)    | Yes  | FK(Customer)  | ID khách hàng       |
 
     Bảng 15: Bảng người dùng
-
-# Demo sản phẩm
-
-## 1. Giao diện người dùng
-
-### 1.1. Giao diện trang chủ trước đăng nhập
-
-![Giao diện trang chủ trước đăng nhập](images/1.png)
-
-Gồm có: Trang chủ, Sản phẩm, Tin tức, Chính sách, Liên hệ, Đăng nhập, Đăng ký. Người dùng click chọn vào các biểu tượng để chọn mục muốn thực hiện.
-
-### 1.2. Giao diện trang chủ sau đăng nhập
-
-![Giao diện trang chủ sau đăng nhập](images/2.png)
-
-Gồm có: Trang chủ, Sản phẩm, Tin tức, Chính sách, Liên hệ, Tên người dùng, Đơn hàng, Đăng xuất. Người dùng click chọn vào các biểu tượng để chọn mục muốn thực hiện.
-
-### 1.3. Giao diện trang đăng nhập
-
-![Giao diện trang đăng nhập](images/3.png)
-
-Đăng nhập là một lối vào ứng dụng, trang web hoặc dịch vụ. Nó giúp người dùng thiết lập danh tính của họ. Nếu thông tin tên tài khoản và mật khẩu đều đúng thì nó sẽ mở trang chủ hoặc trang quản trị còn nếu mọi người nhập sai thì hệ thống sẽ báo lỗi nhập sai.
-
-### 1.4. Giao diện trang đăng ký
-
-![Giao diện trang đăng ký](images/4.png)
-
-Giao diện đăng ký đầy đủ thông tin cá nhân như số điện thoại, email, tên đăng nhập, ngày sinh, … để việc đăng nhập hay tra cứu thông tin một cách dễ dàng và phân biệt giữa nhiều tài khoản khác nhau. Sau khi đăng ký tài khoản xong, bạn có thể đăng nhập tài khoản của bạn đã tạo qua website của chúng tôi đề trải nghiệm website.
-
-### 1.5. Giao diện trang sản phẩm
-
-![Giao diện trang sản phẩm](images/5.png)
-
-Người dùng đề có thể xem thông tin sản phẩm của website kể cả khi đăng nhập hoặc chưa đăng nhập. Ngoài ra người dùng có thể sử dụng các bộ lọc: nhà cung cấp, danh mục, tìm kiếm,... để tìm được sản phẩm mong muốn.
-
-### 1.6. Giao diện trang tin tức
-
-![Giao diện trang tin tức](images/6.png)
-
-Người dùng có thể đọc các tin tức kể cả lúc đăng nhập và chưa đăng nhập, để có thêm thông tin bên cạnh việc mua hàng trên website.
-
-### 1.7. Giao diện trang chính sách thanh toán
-
-![Giao diện trang chính sách thanh toán](images/7.png)
-
-Người dùng có thể đọc qua chính sách thanh toán để biết thêm về cách thức cũng như quy trình thanh toán của siêu thị.
-
-### 1.8. Giao diện trang chính sách bảo hành
-
-![Giao diện trang chính sách bảo hành](images/8.png)
-
-Người dùng có thể đọc qua chính sách bảo hành để biết thêm về cách thức cũng như quy trình bảo hành của siêu thị.
-
-### 1.9. Giao diện trang chính sách vận chuyển
-
-![Giao diện trang chính sách vận chuyển](images/9.png)
-
-Người dùng có thể đọc qua chính sách vận chuyển để biết thêm về cách thức cũng như quy trình vận chuyển của siêu thị.
-
-### 1.10. Giao diện trang thông tin cá nhân
-
-![Giao diện trang thông tin cá nhân](images/10.png)
-
-Người dùng có thể xem thông tin cá nhân khi click vào tên tài khoản của mình. Ngoài ra người dùng cũng có thể chỉnh sửa thông tin của mình.
-
-### 1.11. Giao diện trang đơn hàng đã mua
-
-![Giao diện trang đơn hàng đã mua](images/11.png)
-
-Người dùng có thể quản lý các đơn hàng đã đặt hàng trên website. Ngoài ra người dùng có thể sử dụng các bộ lọc: theo ngày, tìm kiếm,.. để tìm được các đơn hàng mong muốn.
-
-### 1.12. Giao diện trang giỏ hàng
-
-![Giao diện trang giỏ hàng](images/12.png)
-
-Người dùng có thể lựa chọn sản phẩm vào giỏ hàng, tại đây sẽ cung cấp thông tin về thành tiền, thông tin sản phẩm, ngoài ra có thể chỉnh sửa số lượng, sử dụng mã khuyến mãi.
-
-### 1.13. Giao diện trang đơn đặt hàng
-
-![Giao diện trang đơn đặt hàng](images/13.png)
-
-Trang đơn đặt hàng cho phép người dùng nhập thông tin liên quan phục vụ cho việc giao hàng. Sau khi nhập thông tin, người dùng chọn tiếp phương thức thanh toán phù hợp và xác nhận đơn hàng.
-
-### 1.14. Giao diện trang tổng quan
-
-![Giao diện trang tổng quan](images/14.png)
-
-Tại trang tổng quan sẽ cung cấp các thông tin như: doanh thu theo tháng hoặc năm, số lượng đơn hàng, cũng như danh sách nhân viên,.. để quản trị viên dễ dàng nắm bắt tình hình hoạt động của siêu thị.
-
-### 1.15. Giao diện trang quản lý nhân viên
-
-![Giao diện trang quản lý nhân viên](images/15.png)
-
-Quản trị viên có thể xem tất cả thông tin nhân viên hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý nhân viên của siêu thị.
-
-### 1.16. Giao diện trang quản lý khách hàng
-
-![Giao diện trang quản lý khách hàng](images/16.png)
-
-Quản trị viên có thể xem tất cả thông tin khách hàng hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý khách hàng của siêu thị.
-
-### 1.17. Giao diện trang quản lý quyền người dùng
-
-![Giao diện trang quản lý quyền người dùng](images/17.png)
-
-Quản trị viên có thể xem quyền, mã nhân viên và mã khách hàng của tất cả tài khoản đã tạo trên hệ thống của siêu thị.
-
-### 1.18. Giao diện trang quản lý sản phẩm
-
-![Giao diện trang quản lý sản phẩm](images/18.png)
-
-Quản trị viên có thể xem tất cả thông tin sản phẩm hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý sản phẩm của siêu thị trên hệ thống.
-
-### 1.19. Giao diện trang quản lý nhà cung cấp
-
-![Giao diện trang quản lý nhà cung cấp](images/19.png)
-
-Quản trị viên có thể xem tất cả thông tin nhà cung cấp, đối tác hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý thông tin các đối tác của siêu thị.
-
-### 1.20. Giao diện trang quản lý đơn nhập hàng
-
-![Giao diện trang quản lý đơn nhập hàng](images/20.png)
-
-Quản trị viên có thể xem tất cả thông tin các đơn nhập hàng sản phẩm và sử dụng các thao tác: thêm, hủy đơn,.. để dễ dàng quản lý số lượng sản phẩm đầu vào của siêu thị.
-
-### 1.21. Giao diện trang quản lý tin tức
-
-![Giao diện trang quản lý tin tức](images/21.png)
-
-Quản trị viên có thể xem tất cả thông tin các bài viết tin tức hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý bài viết của siêu thị trên hệ thống.
-
-### 1.22. Giao diện trang quản lý hóa đơn
-
-![Giao diện trang quản lý hóa đơn](images/22.png)
-
-Quản trị viên có thể xem tất cả thông tin hóa đơn mà khách đã đặt và sử dụng các thao tác: xem chi tiết, chỉnh sửa trạng thái và hủy đơn,…để dễ dàng quản lý hóa đơn của hệ thống siêu thị.
-
-### 1.23. Giao diện trang quản lý danh mục
-
-![Giao diện trang quản lý danh mục](images/23.png)
-
-Quản trị viên có thể xem tất cả thông tin danh mục sản phẩm và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý danh mục trên hệ thống siêu thị.
-
-### 1.24. Giao diện trang quản lý mã khuyến mãi
-
-![Giao diện trang quản lý mã khuyến mãi](images/24.png)
-
-Quản trị viên có thể xem tất cả thông tin các mã khuyến mãi hiện tại và sử dụng các thao tác: thêm, xóa, sửa để dễ dàng quản lý các mã khuyến mãi của siêu thị.
-
-### 1.25. Giao diện trang quản lý liên hệ
-
-![Giao diện trang quản lý liên hệ](images/25.png)
-
-Quản trị viên có thể xem tất cả thông tin câu hỏi, thắc mắc của khách đã gửi về và sử dụng các thao tác: trả lời, xóa để dễ dàng hồi đáp thắc mắc qua email cũng như quản lý liên hệ của hệ thống siêu thị.
-
-### 1.26. Giao diện trang báo cáo – thống kê
-#### 1.26.1. Giao diện trang báo cáo nhân viên
-![Giao diện trang báo cáo nhân viên](images/26.png)
-
-Quản trị viên có thể xuất các thống kê lại nhân viên phục vụ cho việc báo cáo dưới dạng file PDF, ảnh.
-#### 1.26.2. Giao diện trang báo cáo doanh thu bán hàng
-![Giao diện trang báo cáo doanh thu bán hàng](images/27.png)
-
-Quản trị viên có thể xuất các thống kê doanh thu của siêu thị dưới dạng file PDF, ảnh.
-
-### 1.27. Quản lý trang quản lý phiếu nhập
-
-![Giao diện trang phiếu nhập](images/28.png)
-
-Về trang phiếu nhập của MiniMart được thiết kế để hỗ trợ quản lý quá trình nhập hàng từ nhà cung cấp vào kho hàng của siêu thị. Và chức năng nhập thông tên nhà cung cấp, cập nhật giá tiền theo sản phẩm đã đặt, cập nhật theo trạng thái, các thao tác chỉnh sửa phiếu nhập.
-
-### 1.28. Giao diện trang chi tiết phiếu nhập
-
-![Giao diện trang chi tiết phiếu nhập](images/29.png)
-
-Về trang chi tiết phiếu nhập của MiniMart được thiết kế để hỗ trợ quản lý sản phẩm được nhập hàng từ quá trình nhà cung cấp vào kho hàng của siêu thị. Và được quản lý các chức năng bao gồm:
-
-- Nhập sản phẩm theo đơn phiếu nhập hàng: Hệ thống nên cung cấp giao diện cho người quản lý nhập sản phẩm đã đặt từ nhà cung cấp. Quản trị viên có số lượng, giá cả, và các thông tin khác liên quan.
-- Xác nhận và xử lý phiếu nhập hàng: Người quản lý có thể xem danh sách các phiếu nhập hàng chưa được xác nhận và xử lý. Họ có thể xem thông tin chi tiết về mỗi phiếu và chọn xác nhận để đánh dấu rằng hàng đã được nhận và cập nhật vào kho hàng.
-
 
